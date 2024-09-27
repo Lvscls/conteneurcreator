@@ -20,8 +20,8 @@ jobs:
     
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install colorama pytest
+        sudo python -m pip install --upgrade pip
+        sudo pip install colorama pytest
     
     - name: Run tests
       run: pytest -v
